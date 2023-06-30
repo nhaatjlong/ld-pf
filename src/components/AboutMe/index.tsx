@@ -48,9 +48,9 @@ const AboutMe = (props: AboutMeProps) => {
       </div>
 
       <div className='mt-16 px-4 lg:px-0'>
-        <p className='text-white text-[50px]'>I'm a Web Application Developer.| </p>
+        <p className='text-white text-[50px]'>I&lsquo;m a Web Application Developer.| </p>
         <p className=' text-white'>
-          Currently, I'm working at
+          Currently, I&lsquo;m working at
           <Link href={'https://www.facebook.com/24hdotdev'} target='_blank' className='mx-2 text-[#1877F2]'>
             24hdev CO., LTD | Da Nang
           </Link>
