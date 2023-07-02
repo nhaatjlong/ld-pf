@@ -25,7 +25,8 @@ export const Contact = (props: any) => {
 
       <p className='text-white md:max-w-[50%] text-[15px]'>
         I&apos;m currently looking to join a cross-functional team that values improving people&apos;s lives
-        through accessible design. or have a project in mind? Let&apos;s connect.
+        through accessible design. or have a project in mind ?
+        <span className='whitespace-nowrap'>Let&apos;s connect.</span>
       </p>
 
       <p className='text-white text-[15px]'>hello@longstupid.dev</p>

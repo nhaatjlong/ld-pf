@@ -1,5 +1,9 @@
+import { IoLogoFigma, IoLogoGithub } from 'react-icons/io5';
 import './globals.css';
 import { Preahvihear } from 'next/font/google';
+import { CiHeart, CiKeyboard, CiMonitor } from 'react-icons/ci';
+import Link from 'next/link';
+import { FIGMA_LINK, REPO_LINK } from '@/config';
 
 const preahvihear = Preahvihear({
   subsets: ['latin'],
@@ -15,9 +19,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en' className='bg-[#11071F]'>
       <body className={preahvihear.className}>{children}</body>
-      <footer>
-        <p className='text-white opacity-20 text-right'>© 2023 Long Dang</p>
-      </footer>
+      <Footer />
     </html>
   );
 }
+
+const Footer = () => (
+  <div className='flex flex-wrap justify-between text-white'>
+    <div className='flex items-center gap-1'>
+      <Link href={FIGMA_LINK} target='_blank' className='flex items-center opacity-20 hover:opacity-100'>
+        Design
+        <IoLogoFigma />
+      </Link>
+
+      <Link href={REPO_LINK} target='_blank' className='flex items-center opacity-20 hover:opacity-100'>
+        Code
+        <IoLogoGithub />
+      </Link>
+    </div>
+
+    <p className='flex  items-center gap-2 opacity-20'>
+      Created By Me with <CiKeyboard size={'30px'} /> - <CiMonitor size={'30px'} /> and{' '}
+      <CiHeart size={'30px'} className='text-red-400' />
+    </p>
+
+    <p className='opacity-20 text-right'>© 2023 Long Dang</p>
+  </div>
+);

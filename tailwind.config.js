@@ -22,6 +22,9 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 10s linear infinite',
       },
+      fontFamily: {
+        poppin: ['"Poppins"'],
+      },
     },
   },
   plugins: [],

@@ -18,7 +18,7 @@ const AboutMe = (props: AboutMeProps) => {
             width={400}
             height={100}
             alt='me'
-            className='h-[99%] rounded-full object-cover transform scale-[0.8] hover:scale-100 transition-all ease-linear'
+            className='h-[99%] rounded-full object-cover transform scale-[0.8] lg:hover:scale-90 transition-all ease-linear'
           />
           <Image
             alt='arrow'
@@ -31,7 +31,7 @@ const AboutMe = (props: AboutMeProps) => {
         </div>
 
         {/* TEXT */}
-        <div className='flex flex-col justify-between px-4 lg:px-0'>
+        <div className='flex flex-col justify-between'>
           <p className='text-white'>
             Hello! I Am <span className='text-[#7127BA] text-2xl'>Long Dang</span>
           </p>
@@ -47,7 +47,7 @@ const AboutMe = (props: AboutMeProps) => {
         </div>
       </div>
 
-      <div className='mt-16 px-4 lg:px-0'>
+      <div className='mt-16'>
         <p className='text-white text-[50px]'>I&lsquo;m a Web Application Developer.| </p>
         <p className=' text-white'>
           Currently, I&lsquo;m working at
