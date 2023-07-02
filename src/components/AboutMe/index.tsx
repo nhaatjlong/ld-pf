@@ -18,7 +18,7 @@ const AboutMe = (props: AboutMeProps) => {
             width={400}
             height={100}
             alt='me'
-            className='h-[99%] rounded-full object-cover transform scale-[0.8]'
+            className='h-[99%] rounded-full object-cover transform scale-[0.8] hover:scale-100 transition-all ease-linear'
           />
           <Image
             alt='arrow'
