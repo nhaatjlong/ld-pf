@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export interface AboutMeProps {}
+export interface AboutMeProps { }
 
 const AboutMe = (props: AboutMeProps) => {
   return (
@@ -10,7 +10,7 @@ const AboutMe = (props: AboutMeProps) => {
         {/* IMAGE */}
         <div
           className={
-            'bg-aboutMe bg-no-repeat flex items-center justify-center bg-center h-[400px] relative w-full sm:min-w-[400px]'
+            'bg-aboutMe bg-no-repeat flex items-center justify-center bg-center h-[400px] relative w-full md:min-w-[400px]'
           }
         >
           <Image
@@ -18,7 +18,7 @@ const AboutMe = (props: AboutMeProps) => {
             width={400}
             height={100}
             alt='me'
-            className='h-[99%] rounded-full object-cover transform scale-[0.8] lg:hover:scale-90 transition-all ease-linear'
+            className='lg:h-[99%] rounded-full object-cover transform scale-[0.8] lg:hover:scale-90 transition-all ease-linear'
           />
           <Image
             alt='arrow'

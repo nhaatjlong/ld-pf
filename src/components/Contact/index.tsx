@@ -29,7 +29,7 @@ export const Contact = (props: any) => {
         <span className='whitespace-nowrap'>Let&apos;s connect.</span>
       </p>
 
-      <p className='text-white text-[15px]'>hello@longstupid.dev</p>
+      <p className='text-white text-[15px]'>hello@longstupid.live</p>
 
       <div className='flex gap-1'>
         <Icon href={'https://fb.com/nhaatjlong'}>
