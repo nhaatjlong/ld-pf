@@ -4,15 +4,26 @@ import { Preahvihear } from 'next/font/google';
 import { CiHeart, CiKeyboard, CiMonitor } from 'react-icons/ci';
 import Link from 'next/link';
 import { FIGMA_LINK, REPO_LINK } from '@/config';
+import { Metadata } from 'next';
 
 const preahvihear = Preahvihear({
   subsets: ['latin'],
   weight: ['400'],
 });
 
-export const metadata = {
-  title: 'Hello',
-  description: 'long dang portfolio, resume, long dang resume ba lac ba xam ......',
+export const metadata: Metadata = {
+  title: 'Hello | longstupid',
+  description: 'long dang portfolio, the life, and ba lac ba xam about me :vvvv',
+  keywords: [
+    'long dang',
+    'long dang resume',
+    'longstupid',
+    'longstupid.dev',
+    'longstupid dev',
+    'long 24hdev',
+    'long24hdev',
+    'longstupid resume',
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
